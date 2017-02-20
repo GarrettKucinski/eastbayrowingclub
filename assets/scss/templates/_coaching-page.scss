@@ -1,0 +1,26 @@
+
+    .coach {
+      clear: both;
+      padding-bottom: 40px;
+      overflow:hidden;
+      display: block;
+      /*padding-left: 50px;*/ }
+
+    .coach-name {
+      text-transform: uppercase;
+      font-size: 1.25rem; }
+
+    .coach-image-mask {
+      overflow: hidden;
+      border-radius: 150px;
+      width: 100px;
+      height: 100px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      float: left; }
+
+    .coaches-bio {
+      max-width: 500px;
+      margin-left: 20px;
+      float: left; }

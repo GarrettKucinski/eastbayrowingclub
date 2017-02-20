@@ -5,9 +5,11 @@ Template Name: Two Column
 get_header(); ?>
 
 <?php get_template_part( 'template-parts/featured-image' ); ?>
+<?php if ( ! has_post_thumbnail( $post->ID ) ) : ?>
+    <div class="page-seperator"></div>
+<?php endif; ?>
 
 <div id="page-two-column" role="main">
-
 <?php do_action( 'foundationpress_before_content' ); ?>
 <div class="coaching-header">
 	<h1 class="meet-the-coaches">
