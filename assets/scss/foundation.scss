@@ -74,6 +74,10 @@
   Add your scss files below to structure your project styles
 */
 @import 'templates/custom';
+@import 'templates/front-page';
+@import 'templates/coaching-page';
+@import 'templates/page-two-column';
+@import 'templates/page-sponsorship';
 
 // Modules
 @import "modules/navigation";

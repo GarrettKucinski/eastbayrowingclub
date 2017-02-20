@@ -72,7 +72,9 @@ get_header(); ?>
       <?php wp_reset_postdata(); ?>
       <?php endwhile; endif; ?>
     </article>
-    <?php dynamic_sidebar( 'homepage-widgets' ); ?>
+    <article class="twitter-feed">
+        <?php dynamic_sidebar( 'homepage-widgets' ); ?>
+    </article>
 </section>
 
 <section class="homepage-gallery">

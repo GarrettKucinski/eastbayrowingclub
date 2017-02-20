@@ -29,6 +29,26 @@ if ( ! function_exists( 'foundationpress_sidebar_widgets' ) ) :
 		));
 
 		register_sidebar(array(
+		  'id' => 'homepage-widgets',
+		  'name' => __( 'Homepage widgets', 'foundationpress' ),
+		  'description' => __( 'Widget area for the homepage.', 'foundationpress' ),
+		  'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		  'after_widget' => '</article>',
+		  'before_title' => '<h4>',
+		  'after_title' => '</h4>',
+		));
+
+		register_sidebar(array(
+		  'id' => 'two-column-main-widgets',
+		  'name' => __( 'Two Column Main widgets', 'foundationpress' ),
+		  'description' => __( 'Widget area for the main column of the Two Column Page Template.', 'foundationpress' ),
+		  'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		  'after_widget' => '</article>',
+		  'before_title' => '<h4>',
+		  'after_title' => '</h4>',
+		));
+
+		register_sidebar(array(
 		  'id' => 'middle-third-widgets',
 		  'name' => __( 'Middle Third Widgets', 'foundationpress' ),
 		  'description' => __( 'Area to contain widgets for the middle third of the Horizontal Thirds page template widgets.', 'foundationpress' ),
@@ -39,13 +59,13 @@ if ( ! function_exists( 'foundationpress_sidebar_widgets' ) ) :
 		));
 
 		register_sidebar(array(
-		  'id' => 'homepage-widgets',
-		  'name' => __( 'Homepage widgets', 'foundationpress' ),
-		  'description' => __( 'Drag widgets to this homepage container.', 'foundationpress' ),
+		  'id' => 'lower-third-widgets',
+		  'name' => __( 'Lower Third Widgets', 'foundationpress' ),
+		  'description' => __( 'Area to contain widgets for the lower third of the Horizontal Thirds page template widgets.', 'foundationpress' ),
 		  'before_widget' => '<article id="%1$s" class="widget %2$s">',
 		  'after_widget' => '</article>',
-		  'before_title' => '<h4>',
-		  'after_title' => '</h4>',
+		  'before_title' => '<h6>',
+		  'after_title' => '</h6>',
 		));
 
 		register_sidebar(array(

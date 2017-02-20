@@ -83,8 +83,14 @@
   .dropdown.menu .has-submenu.is-down-arrow a { padding-right: 1rem; }
   .dropdown.menu .has-submenu.is-down-arrow > a::after { border: 0; }
   .dropdown.menu:first-child > li.is-dropdown-submenu-parent > a::after { display: none; }
-  .dropdown.menu.submenu > .menu-item a{
+  .dropdown.menu.submenu > .menu-item a {
       color: $white;
+  }
+  .dropdown.menu.submenu > li {
+      &:hover .is-active a {
+        color: $white;
+        background-color: #42525D;
+      }
   }
 }
 

@@ -1,0 +1,31 @@
+.sponsorship-level {
+    @include grid-column(4);
+    margin-bottom: 30px;
+    &--heading {
+        padding-left: 20px;
+        margin-bottom: 30px;
+    }
+    &--image {
+        float: left;
+        width: 40px;
+        display: block;
+        margin-right: 20px;
+    }
+    &--list {
+        ul {
+            padding-left: 60px;
+        }
+    }
+}
+
+.sponsor-logo {
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+}
+
+.page-seperator {
+    display: block;
+    margin-top: 50px;
+    clear: both;
+}

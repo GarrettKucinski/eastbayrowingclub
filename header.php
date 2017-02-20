@@ -30,6 +30,7 @@
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
 	<header id="masthead" class="site-header" role="banner">
+		<span class="color-bar" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/eastbay/top_graphic.png');"></span>
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
 			<div class="title-bar-title">

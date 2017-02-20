@@ -1,5 +1,7 @@
 body#tinymce{
-  height: auto; // Fix editor style bug
-  max-width: $grid-row-width; // Give the editor a max-width
-  padding: rem-calc(20) !important;
+    height: auto; // Fix editor style bug
+    max-width: $grid-row-width; // Give the editor a max-width
+    padding: rem-calc(20) !important;
+    // Make sure that the font styles for pages don't override the wordpress admin
+    font-family: serif;
 }

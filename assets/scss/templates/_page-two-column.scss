@@ -1,0 +1,61 @@
+#page-two-column {
+    .main-content{
+        overflow: hidden;
+    }
+    
+    #footer {
+        margin-top: rem-calc(60);
+    }
+
+    .coach {
+      clear: both;
+      padding-bottom: 40px;
+      overflow:hidden;
+      display: block;
+      /*padding-left: 50px;*/ }
+
+    .coach-name {
+      text-transform: uppercase;
+      font-size: 1.25rem; }
+
+    .coach-image-mask {
+      overflow: hidden;
+      border-radius: 150px;
+      width: 100px;
+      height: 100px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      float: left; }
+
+    .coaches-bio {
+      max-width: 500px;
+      margin-left: 20px;
+      float: left; }
+
+    .board-of-directors {
+        @include grid-column(10);
+        @include grid-column-end();
+        @include grid-column-position(1);
+        padding-left: 50px!important;
+        margin: 0 auto;
+    }
+
+    .directors-heading {
+        padding: 10px 0;
+    }
+
+    .director {
+        float: left;
+        width: 50%;
+        &--name {
+            font-weight: 500;
+            display: block;
+        }
+        &--title {
+            font-weight: 300;
+            display: block;
+        }
+    }
+
+}

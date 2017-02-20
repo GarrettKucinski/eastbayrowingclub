@@ -147,23 +147,14 @@
     text-align: center; }
 
 .social-media {
-  max-width: 75rem;
-  margin-right: auto;
-  margin-left: auto;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 75px 0; }
-  .social-media::before, .social-media::after {
-    display: table;
-    content: ' '; }
-  .social-media::after {
-    clear: both; }
+    @include grid_row($size: 100%);
+    padding: 40px 0;
+  }
 
 .from-the-blog {
-  width: 66.66667%;
-  float: left;
-  padding-right: 0.625rem;
-  padding-left: 0.625rem; }
+    @include grid-column(8);
+      float: left;
+    }
   @media print, screen and (min-width: 40em) {
     .from-the-blog {
       padding-right: 0.9375rem;
@@ -1135,32 +1126,9 @@ body#tinymce {
   height: 5px;
   margin: 0 auto 30px;
   /*max-width: 90%;*/ }
-
-.coach {
-  clear: both;
-  /*padding-left: 50px;*/ }
-
-.coach-name {
-  text-transform: uppercase;
-  font-size: 1.25rem; }
-
-.coach-image-mask {
-  overflow: hidden;
-  border-radius: 150px;
-  max-width: 100px;
-  max-height: 100px;
-  float: left; }
-
-.coaches-bio {
-  max-width: 500px;
-  margin-left: 20px;
-  float: left; }
-
 .sidebar {
   padding-left: 30px;
   border-left: 1px solid #e6e6e6; }
 
 #coaches-page .sidebar {
   margin-bottom: 40px; }
-
-@import 'coaching-page';
