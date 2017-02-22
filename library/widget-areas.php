@@ -49,6 +49,16 @@ if ( ! function_exists( 'foundationpress_sidebar_widgets' ) ) :
 		));
 
 		register_sidebar(array(
+		  'id' => 'two-column-sidebar',
+		  'name' => __( 'Two Column Sidebar widgets', 'foundationpress' ),
+		  'description' => __( 'Widget area for the sidebar of a generic Two Column Page Template.', 'foundationpress' ),
+		  'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		  'after_widget' => '</article>',
+		  'before_title' => '<h4>',
+		  'after_title' => '</h4>',
+		));
+
+		register_sidebar(array(
 		  'id' => 'middle-third-widgets',
 		  'name' => __( 'Middle Third Widgets', 'foundationpress' ),
 		  'description' => __( 'Area to contain widgets for the middle third of the Horizontal Thirds page template widgets.', 'foundationpress' ),

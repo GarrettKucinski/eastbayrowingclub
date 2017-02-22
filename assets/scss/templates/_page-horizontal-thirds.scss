@@ -1,0 +1,17 @@
+#page-horizontal-thirds {
+    .left-column, .right-column {
+        @include breakpoint(small down) {
+            @include grid-column(12);
+        }
+    }
+    .accent-image {
+        @include breakpoint(small down) {
+            margin-bottom: 30px;
+        }
+    }
+    h4, h5 {
+        @include breakpoint(small down) {
+            font-size: 1.25rem;
+        }
+    }
+}

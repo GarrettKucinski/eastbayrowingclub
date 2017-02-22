@@ -18,9 +18,23 @@
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
-      float: left; }
+      float: left;
+        @include breakpoint(small down) {
+            float: none;
+            margin: 0 auto 30px;
+        }
+  }
 
     .coaches-bio {
-      max-width: 500px;
+      display: block;
       margin-left: 20px;
-      float: left; }
+      float: left;
+      @include breakpoint(medium up) {
+          width: 70%;
+      }
+      @include breakpoint(small down) {
+          margin: 0;
+          text-align: center;
+          padding: 15px;
+      }
+  }

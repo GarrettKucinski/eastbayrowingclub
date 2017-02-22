@@ -11,10 +11,22 @@
 ?>
 
 		</section>
-		<div id="footer-container">
+		<div id="footer-container" <?php if (! is_front_page() ) { echo 'class="not-front-page"'; } ?>>
 			<footer id="footer">
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>
+					<div class="footer-events footer-content">&copy; East Bay Rowing Club. </div>
+					<div class="acf-map footer-content">
+						<?php $location = get_field( 'ebrc_location' ); ?>
+						<div class="marker" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>">
+						<p class="address"><?php echo $location['address']; ?></p>
+						</div>
+					</div>
+					<div class="footer-links footer-content">
+					 	<?php while ( have_rows( 'footer_links' ) ) : the_row(); ?>
+							<a class="footer-link" href="<?php the_sub_field( 'link' ); ?>"><?php the_sub_field( 'link_text' ); ?></a>
+						<?php endwhile; ?>
+					</div>
 				<?php do_action( 'foundationpress_after_footer' ); ?>
 			</footer>
 		</div>

@@ -4,7 +4,7 @@
 }
 
 #mobile-menu, .title-bar {
-  @include hide-for(medium);
+  @include hide-for(large);
 }
 
 // Mobile menu
@@ -50,7 +50,10 @@
 
 // Tablet and desktop menu
 .main-navigation {
-    padding: 20px 0;
+    padding: 20px 20px 20px 0;
+    @include breakpoint(tablet_v down) {
+        padding: 20px 20px 5px 0;
+    }
 }
 
 .top-bar {
@@ -65,18 +68,28 @@
     color: #333;
     padding-top: 0;
     padding-bottom: 0;
-    /*font-weight: bold;*/
     font-size: 1rem;
     line-height: 1;
+    @include breakpoint(tablet_v down) {
+        font-size: .9rem;
+    }
 
     &:hover:not(.button) {
       background-color: #42525D;
     }
   }
 
+.is-accordion-submenu a {
+    color: $white;
+}
   .menu .active > a {color: $white; background-color: lighten($outer-space, 10%); }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
+  .menu>li:not(.menu-text)>a {
+      padding: 1rem;
+      @include breakpoint(tablet_v down) {
+          padding: .5rem;
+      }
+  }
   /*.menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }*/
 
   .dropdown.menu .submenu { border: 0; }

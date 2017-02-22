@@ -17,6 +17,7 @@
 		<?php wp_head(); ?>
 		<script src="https://use.typekit.net/ajp6glu.js"></script>
 		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkpxJOqMR2eVQk0v8OLy-uPvsqwzh7JYg"></script>
 	</head>
 	<body <?php body_class(); ?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
@@ -34,7 +35,7 @@
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
 			<div class="title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="assets/images/eastbay/EBRC_Logo_Color.jpg" alt=""></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/eastbay/EBRC_Logo_Color.png" alt=""></a>
 			</div>
 		</div>
 
@@ -43,7 +44,7 @@
 				<ul class="menu">
 					<li class="home">
 						<span class="eastbay_logo">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/eastbay/EBRC_Logo_Color.jpg" alt=""></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/eastbay/EBRC_Logo_Color.png" alt=""></a>
 						</span>
 					</li>
 				</ul>

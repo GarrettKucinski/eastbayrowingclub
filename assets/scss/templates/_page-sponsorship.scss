@@ -1,5 +1,19 @@
+.column-right {
+    .wpcf7 {
+        margin-bottom: 20px;
+    }
+}
 .sponsorship-level {
-    @include grid-column(4);
+    @include breakpoint(tablet_v up) {
+        @include grid-column(4);
+    }
+    @include breakpoint(medium down) {
+        @include grid-column(12);
+        margin-left: 30px;
+        &:last-child:not(:first-child) {
+            float: left;
+        }
+    }
     margin-bottom: 30px;
     &--heading {
         padding-left: 20px;

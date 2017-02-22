@@ -4,9 +4,46 @@
   margin: 0 auto;
   border-top: 1px solid #ccc;
 
+  &.not-front-page {
+      margin-top: 50px;
+  }
+
+  .acf-map {
+    width: 400px;
+    height: 100px;
+    border: #ccc solid 1px;
+
+    /* fixes potential theme css conflict */
+    img {
+       max-width: inherit !important;
+    }
+  }
+
+  .footer-content {
+      @include grid-column(4);
+      @include breakpoint(small down) {
+          @include grid-column(12);
+          margin-bottom: 20px;
+      }
+  }
+
+  .footer-links {
+      padding-left: 100px;
+      @include breakpoint(small down) {
+          padding-left: 0;
+      }
+  }
+  .footer-link {
+      float: left;
+      width: 50%;
+      display: block;
+  }
+
   #footer {
     @include grid-row();
-    padding: rem-calc(30) 0;
+    max-width: 100%!important;
+    margin: 0!important;
+    padding: rem-calc(30);
 
     ul {
       list-style-type: none;
