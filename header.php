@@ -10,7 +10,7 @@
 
 ?>
 <!doctype html>
-<html class="no-js" <?php language_attributes(); ?> >
+<html class="no-js" <?php language_attributes(); ?>>
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,11 +31,11 @@
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
 	<header id="masthead" class="site-header" role="banner">
-		<span class="color-bar" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/eastbay/top_graphic.png');"></span>
+		<span class="color-bar" style="background-image: url('<?php echo esc_html( get_template_directory_uri() ); ?>/assets/images/eastbay/top_graphic.png');"></span>
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
 			<div class="title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/eastbay/EBRC_Logo_Color.png" alt=""></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_html( get_template_directory_uri() ); ?>/assets/images/eastbay/EBRC_Logo_Color.png" alt=""></a>
 			</div>
 		</div>
 
@@ -44,7 +44,7 @@
 				<ul class="menu">
 					<li class="home">
 						<span class="eastbay_logo">
-							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/eastbay/EBRC_Logo_Color.png" alt=""></a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_html( get_template_directory_uri() ); ?>/assets/images/eastbay/EBRC_Logo_Color.png" alt=""></a>
 						</span>
 					</li>
 				</ul>
