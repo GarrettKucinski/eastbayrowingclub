@@ -57,6 +57,7 @@
 }
 
 .top-bar {
+
   .menu .home a {
     font-size: 1rem;
     color: #333;
@@ -74,9 +75,14 @@
         font-size: .9rem;
     }
 
+
     &:hover:not(.button) {
       background-color: #42525D;
     }
+  }
+
+  .menu .eastbay_logo a:hover {
+    background-color: $white!important;
   }
 
 .is-accordion-submenu a {
@@ -88,6 +94,7 @@
       padding: 1rem;
       @include breakpoint(tablet_v down) {
           padding: .5rem;
+          height: 33px;
       }
   }
   /*.menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }*/

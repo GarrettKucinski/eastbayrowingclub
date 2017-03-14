@@ -30,7 +30,7 @@
       margin-left: 20px;
       float: left;
       @include breakpoint(medium up) {
-          width: 70%;
+          width: 65%;
       }
       @include breakpoint(small down) {
           margin: 0;
