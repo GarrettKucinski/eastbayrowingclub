@@ -22,13 +22,7 @@ get_header(); ?>
 	</div>
 	<div class="middle-third">
 		<span class="left-column">
-			<?php
-			if ( is_dynamic_sidebar( 'middle-third-widgets' ) ) :
-				dynamic_sidebar( 'middle-third-widgets' );
-			else :
-				the_field( 'middle_third_left_content' );
-			endif;
-			?>
+			<?php the_field( 'middle_third_left_content' ); ?>
 		</span>
 		<span class="right-column">
 			<?php the_field( 'middle_third_right_content' ); ?>
@@ -39,13 +33,7 @@ get_header(); ?>
 			<?php the_field( 'lower_third_left_content' ); ?>
 		</span>
 		<span class="right-column">
-			<?php
-			if ( is_active_sidebar( 'lower-third-widgets' ) ) :
-				dynamic_sidebar( 'lower-third-widgets' );
-			else :
-				the_field( 'lower_third_right_content' );
-			endif;
-			?>
+			<?php the_field( 'lower_third_right_content' ); ?>
 		</span>
 
 	</div>

@@ -59,26 +59,6 @@ if ( ! function_exists( 'foundationpress_sidebar_widgets' ) ) :
 		));
 
 		register_sidebar(array(
-		  'id' => 'middle-third-widgets',
-		  'name' => __( 'Middle Third Widgets', 'foundationpress' ),
-		  'description' => __( 'Area to contain widgets for the middle third of the Horizontal Thirds page template widgets.', 'foundationpress' ),
-		  'before_widget' => '<article id="%1$s" class="widget %2$s">',
-		  'after_widget' => '</article>',
-		  'before_title' => '<h6>',
-		  'after_title' => '</h6>',
-		));
-
-		register_sidebar(array(
-		  'id' => 'lower-third-widgets',
-		  'name' => __( 'Lower Third Widgets', 'foundationpress' ),
-		  'description' => __( 'Area to contain widgets for the lower third of the Horizontal Thirds page template widgets.', 'foundationpress' ),
-		  'before_widget' => '<article id="%1$s" class="widget %2$s">',
-		  'after_widget' => '</article>',
-		  'before_title' => '<h6>',
-		  'after_title' => '</h6>',
-		));
-
-		register_sidebar(array(
 		  'id' => 'footer-widgets',
 		  'name' => __( 'Footer widgets', 'foundationpress' ),
 		  'description' => __( 'Drag widgets to this footer container', 'foundationpress' ),
