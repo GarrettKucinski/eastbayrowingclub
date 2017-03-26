@@ -135,3 +135,19 @@ remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wr
 add_action('woocommerce_before_main_content', 'foundationpress_before_content', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 add_action('woocommerce_after_main_content', 'foundationpress_after_content', 10);
+
+// Add Column to Posts to show post id for use in shortcode to output coaches
+add_filter( 'manage_posts_columns', 'revealid_add_id_column', 5 );
+add_action( 'manage_posts_custom_column', 'revealid_id_column_content', 5, 2 );
+
+
+function revealid_add_id_column( $columns ) {
+   $columns['revealid_id'] = 'ID';
+   return $columns;
+}
+
+function revealid_id_column_content( $column, $id ) {
+  if( 'revealid_id' == $column ) {
+    echo $id;
+  }
+}
