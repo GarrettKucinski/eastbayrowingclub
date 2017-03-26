@@ -1,0 +1,21 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [{
+        "before": ["<leader>", "f"],
+        "after": ["<Esc>"]
+    }],
+    "vim.otherModesKeyBindingsNonRecursive": [{
+        "before": ["<leader>", "d"],
+        "after": [],
+        "commands": [{
+            "command": "workbench.action.files.save",
+            "args": []
+        }]
+    }],
+    "vim.leader": ";"
+}
