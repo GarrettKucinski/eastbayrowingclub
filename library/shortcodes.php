@@ -49,3 +49,4 @@ function show_coach_list( $atts, $content = null ) {
     return html_entity_decode( $output );
 }
 add_shortcode( 'coaches', 'show_coach_list' );
+

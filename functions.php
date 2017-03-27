@@ -53,5 +53,8 @@ require_once( 'library/custom-post-types.php' );
 /** Add support for Custom Post Types */
 require_once( 'library/shortcodes.php' );
 
+/** Add support for Options page for footer settings */
+require_once( 'library/footer-settings.php' );
+
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );

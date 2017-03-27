@@ -64,6 +64,7 @@
     "merge-stream": "^1.0.0",
     "motion-ui": "^1.1.0",
     "run-sequence": "^1.1.5",
+    "sass-lint": "^1.10.2",
     "yargs": "^3.31.0"
   },
   "scripts": {
