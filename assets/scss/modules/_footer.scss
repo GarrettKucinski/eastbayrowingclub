@@ -7,24 +7,36 @@
         margin-top: 50px;
     }
     .footer-map {
-        width: 400px;
-        height: 100px;
+        width: 33%;
         border: #ccc solid 1px;
-        /* fixes potential theme css conflict */
-        img {
-            max-width: inherit !important;
+        float: left;
+        @include breakpoint(tablet_v down) {
+            width: 50%;
+        }
+        @include breakpoint(medium down) {
+            width: 100%!important;
+            margin-bottom: 30px;
+        }
+    }
+    .footer-copyright {
+        width: 33%;
+        float: left;
+        @include breakpoint(tablet_v down) {
+            width: 100%!important;
+            margin-top: 40px;
         }
     }
     .footer-content {
         @include grid-column(4);
-        @include breakpoint(small down) {
-            @include grid-column(12);
-            margin-bottom: 20px;
-        }
     }
     .footer-links {
-        padding-left: 100px;
-        @include breakpoint(small down) {
+        width: 33%;
+        padding-left: 5%;
+        @include breakpoint(tablet_v down) {
+            width: 50%;
+        }
+        @include breakpoint(medium down) {
+            width: 100%!important;
             padding-left: 0;
         }
     }

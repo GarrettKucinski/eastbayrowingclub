@@ -7,9 +7,9 @@
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
- 
+
 // Register Custom Post Type
-function create_coach_list() {
+function create_coach_post_type() {
 
 	$labels = array(
 		'name'                  => _x( 'Coaches', 'Post Type General Name', 'coach_list' ),
@@ -40,6 +40,7 @@ function create_coach_list() {
 		'items_list_navigation' => __( 'Items list navigation', 'coach_list' ),
 		'filter_items_list'     => __( 'Filter items list', 'coach_list' ),
 	);
+
 	$args = array(
 		'label'                 => __( 'Coach', 'coach_list' ),
 		'description'           => __( 'A custom post type that generates a coach', 'coaches' ),
@@ -55,12 +56,11 @@ function create_coach_list() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
 	register_post_type( 'coaches', $args );
-
 }
-add_action( 'init', 'create_coach_list', 0 );
+add_action( 'init', 'create_coach_post_type', 0 );

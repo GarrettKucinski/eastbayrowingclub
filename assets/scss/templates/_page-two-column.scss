@@ -1,47 +1,51 @@
 #page-two-column {
-    .main-content{
+    .main-content {
         overflow: hidden;
     }
-
-    .column-left, .column-right {
+    .column-left,
+    .column-right {
         @include breakpoint(medium down) {
             @include grid-column(12);
         }
     }
-
     .left-column-content {
         @include breakpoint(medium down) {
             padding: 0 20px;
         }
     }
-
     #footer {
         margin-top: rem-calc(60);
     }
-
-
     .board-of-directors {
-        @include grid-column(12);
+        @include grid-layout(5, '.director', $grid-column-gutter);
+        @include breakpoint(medium down) {
+            @include grid-layout(1, '.director', $grid-column-gutter);
+            padding-left: 20px;
+        }
     }
-
     .directors-heading {
-        padding: 10px 0;
+        padding: 10px 0 20px 15px;
+        @include breakpoint(medium down) {
+            padding-left: 0;
+        }
     }
-
     .director {
-        float: left;
-        width: 20%;
         max-height: 65px;
+        @include breakpoint(tablet_v) {
+            margin-bottom: 10px;
+        }
         &--name {
             font-weight: 500;
             display: block;
+            line-height: 1rem;
         }
         &--title {
             font-weight: 300;
             display: block;
+            line-height: 1rem;
+            margin-top: 5px;
         }
     }
-
 }
 
 .no-featured-image.page-seperator {
